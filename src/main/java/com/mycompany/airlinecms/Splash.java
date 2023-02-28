@@ -36,13 +36,14 @@ public class Splash extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\signe\\OneDrive\\Bilder\\Daimler_Picto_Airplane\\Daimler_Picto_Airplane_black.png")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(1296, 1253));
         jLabel1.setPreferredSize(new java.awt.Dimension(1296, 1253));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel2.setText("MyCode Space Airline");
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setText("MyCodeSpace Airline");
+
+        jProgressBar1.setBackground(new java.awt.Color(255, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

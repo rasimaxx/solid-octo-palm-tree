@@ -36,6 +36,8 @@ public class Splash extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Users\\signe\\NetBeansProjects\\Image_Airplane\\Airplane_black.png")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(1296, 1253));
         jLabel1.setPreferredSize(new java.awt.Dimension(1296, 1253));
 
@@ -43,25 +45,22 @@ public class Splash extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
         jLabel2.setText("MyCodeSpace Airline");
 
-        jProgressBar1.setBackground(new java.awt.Color(255, 0, 0));
+        jProgressBar1.setBackground(new java.awt.Color(204, 204, 204));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(95, 95, 95)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(179, 179, 179)
-                                .addComponent(jLabel2)))
-                        .addGap(0, 106, Short.MAX_VALUE))
-                    .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addGap(179, 179, 179)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(195, 195, 195)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(216, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,8 +68,8 @@ public class Splash extends javax.swing.JFrame {
                 .addGap(53, 53, 53)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

@@ -35,6 +35,7 @@ public class MainForm extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -101,6 +102,12 @@ public class MainForm extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setText("Cancellation");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Users\\signe\\NetBeansProjects\\Image_Airplane\\Airplane_black.png")); // NOI18N
+        jLabel3.setMaximumSize(new java.awt.Dimension(1296, 1253));
+        jLabel3.setPreferredSize(new java.awt.Dimension(1296, 1253));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -113,11 +120,14 @@ public class MainForm extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jButton2)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)))
                         .addGap(18, 18, 18)
                         .addComponent(jButton4)))
                 .addContainerGap(139, Short.MAX_VALUE))
@@ -128,7 +138,9 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton1)
@@ -147,8 +159,7 @@ public class MainForm extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -200,6 +211,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

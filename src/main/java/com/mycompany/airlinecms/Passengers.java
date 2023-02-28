@@ -58,6 +58,7 @@ public class Passengers extends javax.swing.JFrame {
         pPhone = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -268,6 +269,7 @@ public class Passengers extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 Connection Con = null;
 PreparedStatement Pst = null;
@@ -296,7 +298,7 @@ Statement St = null;
         }else{
             try{
                 Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/airlinedb","root","");
-                PreparedStatement Add = Con.prepareStatement("insert into PassengerTable(?,?,?,?,?,?,?,?,?)");
+                PreparedStatement Add = Con.prepareStatement("insert into passengertable values(?,?,?,?,?,?,?)");
                 Add.setInt(1,1);
                 Add.setString(2, pName.getText());
                 Add.setString(3, pNat.getSelectedItem().toString());
